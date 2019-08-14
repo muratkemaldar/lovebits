@@ -1,0 +1,43 @@
+.stage-select {
+  max-width: 1180px;
+
+  &-list {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-gap: 30px;
+  }
+
+  &-list-item {
+    background: rgba(255, 255, 255, 0.95);
+    display: grid;
+    grid-template-columns: 180px 2.5fr;
+    position: relative;
+
+    img {
+      width: 180px;
+      height: 180px;
+      max-width: 100%;
+      opacity: 0.85;
+      background: #555;
+    }
+
+    .vertical-space-between {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    > div {
+      padding: 20px;
+
+      h4 {
+        margin: 0 0 0.25rem;
+      }
+
+      p {
+        opacity: 0.5;
+      }
+    }
+  }
+}
