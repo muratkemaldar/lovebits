@@ -38,6 +38,6 @@ Currently I deploy the project manually on https://lovebits.bilebile.net.
 - React (for the UI)
 - Paper.js (for the interactive parts of each poem)
 
-# License
+## License
 
 MIT License
