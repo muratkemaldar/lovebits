@@ -23,6 +23,8 @@ This is my first open-source project.
 
 Please create a fork and create Pull Requests for new poems, improvements, and more. If you have any questions or need feedback to create a new poem, just let me know.
 
+My
+
 **Here are some topics you can help with, if you want to**:
 
 - New poems
@@ -43,6 +45,10 @@ Currently I deploy the project manually on https://lovebits.bilebile.net, but I 
 
 - React (for the UI)
 - Paper.js (for the interactive parts of each poem)
+
+## Author
+
+Murat Kemaldar / [@murimuffin5 (Twitter)](https://twitter.com/murimuffin5)
 
 ## License
 
