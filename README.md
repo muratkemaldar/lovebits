@@ -23,6 +23,12 @@ This is my first open-source project.
 
 Please create a fork and create Pull Requests for new poems, improvements, and more. If you have any questions or need feedback to create a new poem, just let me know.
 
+**Here are some topics you can help with, if you want to**:
+
+- New poems
+- Responsiveness (This is somewhat big, because of static numbers in poems. Needs some effort.)
+- Tests?
+
 ## Development
 
 Fork and clone the project.
@@ -31,7 +37,7 @@ Fork and clone the project.
 
 `npm start`
 
-Currently I deploy the project manually on https://lovebits.bilebile.net.
+Currently I deploy the project manually on https://lovebits.bilebile.net, but I am planning to use Netlify at some point.
 
 ## Tech
 
