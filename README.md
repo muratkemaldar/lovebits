@@ -6,14 +6,16 @@
 
 LoveBits is a small experience meant to make coding languages more appealing to non-developers by writing JavaScript code poems.
 
-Main ideas:
+🏅LoveBits won the Hack of the Month award at [Berlin Hack and Tell #73](https://berlinhackandtell.rocks/2019-07-30-no73-libre-not-libra) in July 2019.
 
-- Combining code with something "that you can do with human languages" (like poems) to create a different approach to coding
-- Putting the message of code before the basics of coding
-
-## But... why?
+## Motivation
 
 There are a lot of misconceptions about coding. People get intimitated, and don't know where to start because they don't treat it like a human language.
+
+Main ideas are:
+
+- Overcoming the coding language barrier by combining code with something "that you can do with human languages" (like poems) to create a different approach to coding
+- Putting the message of code before the basics of coding
 
 You can read more about it on [the article I wrote for the Smashing Magazine](https://www.smashingmagazine.com/2018/07/writing-code-poems/).
 
