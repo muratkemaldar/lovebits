@@ -1,7 +1,7 @@
 module.exports = {
   entry: ["./src/index.js"],
   output: {
-    path: `${__dirname}/docs`, // docs because of github pages
+    path: `${__dirname}/docs`,
     filename: "bundle.js"
   },
   devtool: "sourcemap",
