@@ -1,80 +1,81 @@
 .splash {
-    max-width: 500px;
-    
-    h1 {
-        margin-bottom: 0em;
+  max-width: 500px;
+
+  h1 {
+    margin-bottom: 0em;
+  }
+
+  p {
+    opacity: 0.9;
+    font-size: 1em;
+    margin: 1rem 0 1.6rem;
+    line-height: 1.3;
+    max-width: 30em;
+  }
+
+  .lovebits-logo {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    transform: rotate(45deg);
+    transform-origin: 50% 50% 0;
+    transition: all 1s;
+    margin-left: -1.25em;
+
+    .mb,
+    .fb {
+      width: 5em;
+      height: 5em;
+      background-color: white;
+      position: absolute;
+      top: 0;
     }
 
-    p {
-        opacity: 0.9;
-        font-size: 1em;
-        margin: 1rem 0 1.6rem;
-        line-height: 1.3;
-        max-width: 30em;
+    .mb {
+      left: 0;
+      transform-origin: 0% 50% 0;
+      background-color: #5f93ae;
+      animation: animLogoMb 4s infinite;
+      z-index: 1;
+
+      @at-root {
+        @keyframes animLogoMb {
+          0% {
+            transform: scaleX(1);
+          }
+          25% {
+            transform: scaleX(2);
+          }
+          50% {
+            transform: scaleX(1);
+          }
+          100% {
+            transform: scaleX(1);
+          }
+        }
+      }
     }
 
-    .lovebits-logo {
-        width: 10em;
-        height: 10em;
-        position: relative;
-        transform: rotate(45deg);
-        transform-origin: 50% 50% 0;
-        transition: all 1s;
-        margin-left: -1.25em;
-    
-        .mb, .fb {
-            width: 5em;
+    .fb {
+      top: -5em;
+      right: 0;
+      background-color: purple;
+      z-index: 2;
+      animation: animLogoFb 4s infinite;
+
+      @at-root {
+        @keyframes animLogoFb {
+          50% {
             height: 5em;
-            background-color: white;
-            position: absolute;
-            top: 0;
+          }
+          75% {
+            height: 10em;
+          }
+          100% {
+            height: 5em;
+          }
         }
-    
-        .mb {
-            left: 0;
-            transform-origin: 0% 50% 0;
-            background-color: #5f93ae;
-            animation: animLogoMb 4s infinite;
-            z-index: 1;
-
-            @at-root {
-                @keyframes animLogoMb {
-                    0% {
-                        transform: scaleX(1);
-                    }
-                    25% {
-                        transform: scaleX(2);
-                    }
-                    50% {
-                        transform: scaleX(1);
-                    }
-                    100% {
-                        transform: scaleX(1);
-                    }
-                }
-            }
-        }
-    
-        .fb {
-            top: -5em;
-            right: 0;
-            background-color: purple;
-            z-index: 2;
-            animation: animLogoFb 4s  infinite ;
-
-            @at-root {
-                @keyframes animLogoFb {
-                    50% {
-                        height: 5em;
-                    }
-                    75% {
-                        height: 10em;
-                    }
-                    100% {
-                        height: 5em;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

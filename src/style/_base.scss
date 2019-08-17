@@ -1,118 +1,70 @@
-@import 'reset.css';
+@import "reset.css";
 
 body {
-	padding: 8vw;
+  padding: 8vw;
 }
 
-html, body {
-	font-family: 'Segoe UI', 'Roboto', sans-serif;
-	box-sizing: border-box;
-	background: #ffdd00;
-	color: #333;
-	line-height: 1.3;
+html,
+body {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  box-sizing: border-box;
+  background: #ffdd00;
+  color: #333;
+  line-height: 1.3;
 
-	* {
-		box-sizing: inherit;
-	}
+  * {
+    box-sizing: inherit;
+  }
 
-	&.grab {
-		cursor: -webkit-grab;
-		cursor: grab;
+  &.grab {
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+
+  &.grabbing {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
 }
 
-	&.grabbing {
-			cursor: -webkit-grabbing;
-			cursor: grabbing;
-	}
+h1,
+h2,
+h3 {
+  font-family: "Do Hyeon", "Roboto", sans-serif;
+  font-size: 3em;
+  margin-bottom: 1rem;
+  color: black;
 }
 
-h1, h2, h3 {
-	font-family: 'Do Hyeon', 'Roboto', sans-serif;
-	font-size: 3em;
-	margin-bottom: 1rem;
-	color: black;
-}
-
-h4, h5, h6 {
-	font-family: 'Do Hyeon', 'Roboto', sans-serif;
-	font-size: 1.5em;
-	margin-bottom: 1rem;
+h4,
+h5,
+h6 {
+  font-family: "Do Hyeon", "Roboto", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
 }
 
 p {
-	margin-bottom: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 strong {
-	font-weight: bold;
-}
-
-a, .text-link {
-	text-decoration: underline;
-	font-size: 1em;
-	background: none; border: none;
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-	color: purple;
-	font-family: inherit;
-	text-transform: none;
-	cursor: pointer;
-	display: inline-block;
-}
-
-a[role="button"] {
-	@extend button;
-}
-
-button, .button {
-	border-radius: 4px;
-	font-family: 'Do Hyeon', 'Roboto', sans-serif;
-	text-transform: uppercase;
-	background: #ddd;
-	padding: 0.66em 1em;
-	font-size: 1.25em;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.15s;
-	transform-origin: 50% 50% 0;
-	backface-visibility: hidden;
-	border: 0;
-	outline: 0;
-	cursor: pointer;
-	background: transparent;
-	color: currentColor;
-	border: 2px solid currentColor;
-
-	&.full-width {
-		width: 100%;
-	}
-
-	&.filled {
-		border: none;
-		background: black;
-		color: white;
-	}
-
-	&:not(:last-of-type){
-		margin: 0px 8px 8px 0;
-	}
+  font-weight: bold;
 }
 
 .block {
-	margin-bottom: 16px;
-	display: block;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .centered-flex {
-	@extend %stretch;
-	display: flex;
-	align-items: center;
-	padding: 10%;
+  @include position-absolute();
+  display: flex;
+  align-items: center;
+  padding: 10%;
 
-	> * {
-		margin: auto;
-		width: 100%;	
-	}
+  > * {
+    margin: auto;
+    width: 100%;
+  }
 }

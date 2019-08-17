@@ -1,0 +1,55 @@
+a,
+.text-link {
+  text-decoration: underline;
+  font-size: 1em;
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: purple;
+  font-family: inherit;
+  text-transform: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a[role="button"] {
+  @extend button;
+}
+
+button,
+.button {
+  border-radius: 4px;
+  font-family: "Do Hyeon", "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: #ddd;
+  padding: 0.66em 1em;
+  font-size: 1.25em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  transform-origin: 50% 50% 0;
+  backface-visibility: hidden;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  color: currentColor;
+  border: 2px solid currentColor;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.filled {
+    border: none;
+    background: black;
+    color: white;
+  }
+
+  &:not(:last-of-type) {
+    margin: 0px 8px 8px 0;
+  }
+}

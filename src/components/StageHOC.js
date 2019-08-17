@@ -57,7 +57,7 @@ export default function StageHOC(WrappedStage) {
       } = this.state;
 
       return (
-        <div className="Stage">
+        <div className="stage">
           <WrappedStage
             setCodeLayer={this.setCodeLayer.bind(this)}
             setPlayLayerOverlay={this.setPlayLayerOverlay.bind(this)}
