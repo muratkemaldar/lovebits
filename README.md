@@ -23,8 +23,6 @@ This is my first open-source project.
 
 Please create a fork and create Pull Requests for new poems, improvements, and more. If you have any questions or need feedback to create a new poem, just let me know.
 
-My
-
 **Here are some topics you can help with, if you want to**:
 
 - New poems
