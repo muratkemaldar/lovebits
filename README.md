@@ -39,7 +39,7 @@ Fork and clone the project.
 
 `npm start`
 
-After you did your changes, create a Pull Request. Once the code is is merged, it will automatically be deployed via Netlify.
+After you did your changes, create a Pull Request. Once the code is merged, it will automatically be deployed via Netlify.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2e4a2a19-2f59-4776-9669-8c9abfbeb8d7/deploy-status)](https://app.netlify.com/sites/lovebits/deploys)
 
