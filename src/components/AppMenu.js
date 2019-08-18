@@ -48,6 +48,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                   <ul>
                     <li>
                       <NavLink
+                        onClick={toggle}
                         activeClassName="active"
                         className="nav-button"
                         to="/poems"
@@ -57,6 +58,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                       <ul>
                         <li>
                           <NavLink
+                            onClick={toggle}
                             to="/poem/love-at-first-sight"
                             activeClassName="active"
                             className="nav-button"
@@ -66,6 +68,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                         </li>
                         <li>
                           <NavLink
+                            onClick={toggle}
                             to="/poem/heartbeat"
                             activeClassName="active"
                             className="nav-button"
@@ -75,6 +78,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                         </li>
                         <li>
                           <NavLink
+                            onClick={toggle}
                             to="/poem/sunset"
                             activeClassName="active"
                             className="nav-button"
@@ -84,6 +88,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                         </li>
                         <li>
                           <NavLink
+                            onClick={toggle}
                             to="/poem/the-promise"
                             activeClassName="active"
                             className="nav-button"
