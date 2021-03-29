@@ -12,7 +12,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
   const transitions = useTransition(isOpen, null, {
     from: { opacity: 1, transform: "translate3d(-100%, 0%, 0)" },
     enter: { opacity: 1, transform: "translate3d(0%, 0%, 0)" },
-    leave: { opacity: 1, transform: "translate3d(-100%, 0%, 0)" }
+    leave: { opacity: 1, transform: "translate3d(-100%, 0%, 0)" },
   });
 
   return (
@@ -20,7 +20,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
       <button
         style={{
           color: location.pathname.includes("/poem/") ? "white" : "black",
-          transition: "all 1s"
+          transition: "all 1s",
         }}
         onClick={toggle}
         type="button"
@@ -40,7 +40,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                 right: "auto",
                 bottom: "auto",
                 left: 0,
-                transformOrigin: "50% 50% 0"
+                transformOrigin: "50% 50% 0",
               }}
             >
               <div className="app-menu-content">
@@ -114,7 +114,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://twitter.com/murimuffin5"
+                        href="https://twitter.com/muratkemaldar"
                       >
                         Murat Kemaldar
                       </a>
@@ -132,7 +132,7 @@ const AppMenu = ({ location = {}, defaultIsOpen = false }) => {
 };
 
 const clickOutsideConfig = {
-  handleClickOutside: () => AppMenu.handleClickOutside
+  handleClickOutside: () => AppMenu.handleClickOutside,
 };
 
 export default withRouter(onClickOutside(AppMenu, clickOutsideConfig));

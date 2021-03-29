@@ -8,7 +8,7 @@ const StageSelect = ({ stages }) => (
       <h1>Select code poem</h1>
       <br />
       <ul className="stage-select-list">
-        {stages.map(stage => (
+        {stages.map((stage) => (
           <li className="stage-select-list-item" key={`stage-${stage.name}`}>
             <img src={stage.img} alt={stage.name} />
             <div className="vertical-space-between">
@@ -30,7 +30,7 @@ const StageSelect = ({ stages }) => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/murimuffin5"
+          href="https://twitter.com/muratkemaldar"
         >
           Let me know!
         </a>

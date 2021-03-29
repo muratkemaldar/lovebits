@@ -27,9 +27,9 @@ const Splash = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/murimuffin5"
+            href="https://twitter.com/muratkemaldar"
           >
-            Murat Kemaldar (@murimuffin5)
+            Murat Kemaldar (@muratkemaldar)
           </a>
         </p>
       </div>
